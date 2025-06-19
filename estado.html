@@ -12,7 +12,7 @@
 </head>
 <body>
   <div id="loader" aria-label="Cargando contenido de la tarjeta de cliente">
-    <img src="css/img/estoico_logo-1.png" alt="Cargando..." class="galope">
+    <img src="css/img/logo.png" alt="Cargando..." class="galope">
   </div>
 
   <div class="menu-style" id="contenedor" style="display:none;">
@@ -24,12 +24,12 @@
       <h1>
         <span style="font-size: 37px; display:block; margin-top: 6px; font-family: 'Montserrat', sans-serif;">UN CAFECITO</span>
       </h1>
-      <p id="faltan" style="color: white; font-family: 'Oswald', serif; text-transform: uppercase; font-size: 17px; display: block; margin-top: 6px;"></p>
+      <p id="faltan" style="color: #000000; font-family: 'Oswald', serif; text-transform: uppercase; font-size: 17px; display: block; margin-top: 6px;"></p>
     </div>
     <div id="grid" class="grid"></div>
     <div id="mensaje-error" style="display:none;">
-      <div style="padding: 30px 20px; background: #00449f; border-radius: 12px; font-size: 18px; color: #00449f; text-align: center;">
-        <p id="mensaje-no-registrado" style="white-space: pre-line; margin: 20px 0; color: white;"></p>
+      <div style="padding: 30px 20px; background: #f5f5f5; border-radius: 12px; font-size: 18px; color: white; text-align: center;">
+        <p id="mensaje-no-registrado" style="white-space: pre-line; margin: 20px 0; color: #000000;"></p>
         <div style="display: flex; justify-content: center;">
           <a href="" id="boton-registrar" class="btn-primary" style="min-width: 220px; text-decoration: none;">Registrate</a>
         </div>
@@ -38,12 +38,12 @@
     <div class="logout">
       <a href="index.html" class="volver-card">Volver</a>
     </div>
-    <footer style="margin-top: 30px;">
-      <p style="color: white; font-family: 'Oswald', serif; text-transform: uppercase; font-size: 17px; display: block; margin-top: 6px;">
-      Seguinos en Instagram<br>
-      <a href="https://www.instagram.com/estoicocafe" target="_blank" style="color: rgb(255, 255, 255); text-transform: lowercase; text-decoration: none;" aria-label="Instagram de Padre Café">@estoicocafe</a>
-    </p>
-  </footer>
+    <footer id="footer" style="margin-top: 30px;">
+      <p id="footer-text" style="font-family: 'Oswald', serif; text-transform: uppercase; font-size: 17px; display: block; margin-top: 6px; color: black">
+        Seguinos en Instagram<br>
+        <a id="footer-link" href="https://www.instagram.com/padrecoffeeroasters" target="_blank" style="text-transform: lowercase; text-decoration: none; color: black">@padrecoffeeroasters</a>
+      </p>
+    </footer>
   </div>
 
   <script type="module">
@@ -152,14 +152,14 @@
         div.className = "circle";
 
         if (selloCumpleActivo && !selloCumpleUsado) {
-          div.style.backgroundImage = "url('css/img/estoico_logo-1.png')";
+          div.style.backgroundImage = "url('css/img/sello_cumpleanos.png')";
           div.style.backgroundSize = "cover";
           div.style.opacity = "1";
           div.classList.add("glow");
           cafesRestantes--;
           selloCumpleUsado = true;
         } else if (selloInstaActivo && !selloInstaUsado) {
-          div.style.backgroundImage = "url('css/img/estoico_logo-1.png')";
+          div.style.backgroundImage = "url('css/img/Corcega_Logo_Original_Insta.png')";
           div.style.opacity = "1";
           div.classList.add("glow");
           cafesRestantes--;
@@ -170,7 +170,7 @@
         } else if (i === 9) {
           div.classList.add("noveno");
         } else {
-          div.style.backgroundImage = "url('css/img/estoico_logo-1.png')";
+          div.style.backgroundImage = "url('css/img/logo.png')";
         }
 
         grid.appendChild(div);
