@@ -385,5 +385,5 @@ footer a[href*="instagram.com"]::before {
 /* Color del placeholder del input */
 input::placeholder {
   color: var(--color-letra-primaria);
-  opacity: 1;
+  opacity: 0.4;
 }
