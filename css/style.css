@@ -223,7 +223,7 @@ section {
   border-radius: 16px;
   max-width: 400px;
   width: 100%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 1);
   text-align: center;
 }
 
@@ -249,12 +249,12 @@ section {
 }
 
 .tarjeta-fidelidad .circle.lleno {
-  background-image: url("img/estoico_logo-1.png");
+  background-image: url("img/estoico_logo-4.png");
   opacity: 1;
 }
 
 .tarjeta-fidelidad .circle.noveno {
-  background-image: url("img/estoico_logo-1.png");
+  background-image: url("img/estoico_logo-4.png");
   opacity: 1;
 }
 
