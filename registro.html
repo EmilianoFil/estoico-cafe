@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="menu-style">
-  <img src="css/img/estoico_logo-4.png" alt="Córcega Café" class="logo" />
+  <img src="css/img/estoico_logo-3.png" alt="Córcega Café" class="logo" />
   <form id="registroForm" data-gtm-form-interact-id="0">
     <input type="tel" name="dni" id="dni" placeholder="DNI" aria-label="Número de DNI" inputmode="numeric" pattern="[0-9]{7,8}" maxlength="8" required title="Debe tener entre 7 y 8 números">
     <input type="text" name="nombre" placeholder="Nombre y apellido" aria-label="Nombre y apellido" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Sólo letras y espacios">
@@ -43,7 +43,7 @@
   </form>
 
   <div id="loader" style="display: none; margin-top: 20px; text-align: center; width: 100%;">
-    <img src="css/img/logo.png" class="galope" style="width: 95px; display: inline-block;">
+    <img src="css/img/estoico_logo-4.png" class="galope" style="width: 95px; display: inline-block;">
   </div>
   <div id="mensaje-container" style="display: none; text-align: center;">
     <div style="padding: 30px 20px; background: white; border-radius: 12px; font-size: 18px; color: black;">
@@ -151,7 +151,7 @@
 
           await addDoc(collection(db, "logs"), {
             usuario: dni,
-            accion: "registro_cliente",
+            accion: "estoico_registro_cliente",
             detalles: `Registro nuevo cliente ${dni} - ${nombre}`,
             timestamp: serverTimestamp()
           });
