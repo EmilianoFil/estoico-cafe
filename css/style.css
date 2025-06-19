@@ -249,12 +249,12 @@ section {
 }
 
 .tarjeta-fidelidad .circle.lleno {
-  background-image: url("img/estoico_logo-1.png");
+  background-image: url("../img/estoico_logo-1.png");
   opacity: 1;
 }
 
 .tarjeta-fidelidad .circle.noveno {
-  background-image: url("img/estoico_logo-1.png");
+  background-image: url("../img/estoico_logo-1.png");
   opacity: 1;
 }
 
@@ -381,3 +381,8 @@ footer a[href*="instagram.com"]::before {
       gap: 10px;
       margin-top: 10px;
     }
+
+.tarjeta-fidelidad .circle:not(.lleno):not(.noveno):not(.glow) {
+  border: 2px dashed var(--color-letra-primaria);
+  background-color: rgba(255,255,255,0.05);
+}
